@@ -13,8 +13,12 @@
 #   we usually have to do some research on how the task is done:
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
-# =========================================
-# Your code to define the method goes here.
-# =========================================
+def pmt(rate, nper, pv)
+  # ============================================
+  # Your code to implement the method goes here.
+  # ============================================
+end
 
-puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
+# Example usage of the method:
+
+# puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
