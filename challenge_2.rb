@@ -1,6 +1,7 @@
 require './challenge_1.rb'
 # Line 1 effectively copy-pastes in any code you wrote in challenge_1.rb
 # It's similar to connecting an external stylesheet to an HTML file.
+# So if you've already implemented the pmt method over there, then you don't have to rewrite it here.
 
 # ===========
 # CHALLENGE 2
@@ -14,13 +15,10 @@ loan_quotes = [
   { "bank" => "Ash Street Bank", "rate" => 0.011}
 ]
 
-# Let's ask our user for the parameters of the loan:
+# Given some parameters of the loan, perhaps entered by a user on a web form:
 
-puts "Enter the number of payments:"
-nper = gets.chomp.to_i
-
-puts "Enter the loan amount:"
-pv = gets.chomp.to_f
+number_of_payments = 180
+principal_amount = 100000.0
 
 # Now, loop through the array of loan quotes using .each:
 #   For each option, tell the user how much the monthly payment will be to that bank.
