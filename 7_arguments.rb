@@ -1,6 +1,13 @@
 # Defining our own methods that can accept arguments
 
 # Compare and contrast this to print_heading in 6_methods.rb
+#def print_heading
+#  content = "Students"
+#  puts "=" * content.length
+#  puts "#{content}"
+#  puts "=" * content.length
+#end
+
 def print_heading(content)
   puts "=" * content.length
   puts "#{content}"

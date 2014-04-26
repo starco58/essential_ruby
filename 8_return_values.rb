@@ -56,6 +56,6 @@ def standard_deviation(list_of_numbers)
   return Math.sqrt(variance(list_of_numbers)) # We re-use our variance method
 end
 
-data = [93, 65, 87, 68, 2, 64, 36, 96, 45, 47]
+data = [48, 35, 84, 57, 21, 56, 42, 96, 31, 47]
 
 puts "The standard deviation is #{standard_deviation(data)}."

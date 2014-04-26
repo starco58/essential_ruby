@@ -14,9 +14,12 @@
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
 def pmt(rate, nper, pv)
-  # ============================================
-  # Your code to implement the method goes here.
-  # ============================================
+      rate = .065
+      nper = 30
+      pv = 200000
+
+    pmt=((rate / 100 / 12) * pv) / (1 - ((1 + (rate / 100 / 12)) ^ (-nper * 12)))
+  end
 end
 
 # Example usage of the method:
