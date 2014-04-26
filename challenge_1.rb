@@ -14,16 +14,16 @@
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
 
-def pmt(rate, nper, pv)
-    pmt = 0
+def pmt
     rate = 0.065
     nper = 30
     pv = 200000
+    pmt = (rate / 100 / 12) * pv
 
     # monthly = (rate / 100 / 12) * pv
     # denominator =
 
-  return (rate / 100 / 12) * pv
+  return pmt
 
 end
 
