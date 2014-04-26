@@ -13,21 +13,19 @@
 #   we usually have to do some research on how the task is done:
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
-def pmt(rate,nper,pv)
+def pmt
   # ============================================
   # Your code to implement the method goes here.
   # ============================================
-    rate = .065
+    rate = 0.065
     nper = 360
     pv = 200000
 
     i= (1+rate/12)**(12/12)-1
-    annuity = (1-(1/(1+i)**nper)/1
-      pmt = loan/annuity
+    annuity = (1-(1/(1+i))**nper)/1
+      pmt = pv/annuity
   return pmt
-
 end
-
 
 # Example usage of the method:
 pmt
