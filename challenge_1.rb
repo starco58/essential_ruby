@@ -15,18 +15,19 @@
 
 
 def pmt(rate, nper, pv)
-      rate = 0.065
-      nper = 30
-      pv = 200000
+    pmt = 0
+    rate = 0.065
+    nper = 30
+    pv = 200000
 
     # monthly = (rate / 100 / 12) * pv
     # denominator =
 
-  return pmt=((rate / 100 / 12) * pv) / (1 - ((1 + (rate / 100 / 12)) ** (-nper * 12)))
+  return (rate / 100 / 12) * pv
 
 end
 
 # Example usage of the method:
-
+pmt
 
 # puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
