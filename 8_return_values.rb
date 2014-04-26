@@ -58,4 +58,4 @@ end
 
 data = [48, 35, 84, 57, 21, 56, 42, 96, 31, 47]
 
-puts "The standard deviation is #{standard_deviation(data)}."
+puts "The standard deviation is #{sum(data)}."
