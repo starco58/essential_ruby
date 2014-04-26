@@ -13,21 +13,22 @@
 #   we usually have to do some research on how the task is done:
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
-
-def pmt
-    rate = 0.065
-    nper = 30
+def pmt(rate,nper,pv)
+  # ============================================
+  # Your code to implement the method goes here.
+  # ============================================
+    rate = .065
+    nper = 360
     pv = 200000
-    pmt = (rate / 100 / 12) * pv
 
-    # monthly = (rate / 100 / 12) * pv
-    # denominator =
-
+    i= (1+rate/12)**(12/12)-1
+    annuity = (1-(1/(1+i)**nper)/1
+      pmt = loan/annuity
   return pmt
 
 end
 
+
 # Example usage of the method:
 pmt
-
 # puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
