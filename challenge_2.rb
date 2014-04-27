@@ -31,8 +31,7 @@ pv=principal_amount.to_f
 # Your code goes here.
 # ====================
 loan_quotes.each do |loan|
-  puts "#{loan["bank"]} quotes you a monthly payment of $#{pmt(loan["rate"], number_of_payments, principal_amount).round(2)} at a monthly interest rate of #{(loan["rate",]*100).round(2)}%"
-  # (loan["rate"], number_of_payments, principal_amount)
+  puts "#{loan["bank"]} quotes you a monthly payment of $#{pmt(loan["rate"], nper, pv).round(2)} at a monthly interest rate of #{(loan["rate",]*100).round(2)}%"
 
   # puts "Your monthly payment will be #{pmt["rate"]} #{pmt["number_of_payments"]} #{pmt["principal_amount"]}"
 
