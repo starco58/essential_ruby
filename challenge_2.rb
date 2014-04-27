@@ -27,3 +27,7 @@ principal_amount = 100000.0
 # ====================
 # Your code goes here.
 # ====================
+pmt.each do |payment|
+  puts "Your monthly payment will be #{pmt["rate"]} #{pmt["number_of_payments"]} #{pmt["principal_amount"]}"
+  # "Howdy, #{person["first_name"]} #{person["last_name"]}!"
+end

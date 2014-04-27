@@ -20,7 +20,7 @@ def pmt(rate,nper,pv)
     # i= (1+rate/12)**(12/12)-1
     # annuity = (1-(1/(1+rate))**nper)/1
     #   pmt = pv/annuity
-    pmt=((rate/100/12)*pv)/(1-((1+(rate/100/12))**(-nper*12)))
+    pmt=((rate/12)*pv)/(1-((1+(rate/12))**(-nper*12)))
 
   return pmt
 
@@ -28,10 +28,10 @@ end
 
 # Example usage of the method:
 
-pmt(6.5,30,200000)
+pmt(0.065,30,200000)
 
-# rate = 0.065
-# nper = 360
+# rate = 6.5
+# nper = 30
 # pv = 200000
 
-puts "Your monthly payment will be #{pmt(6.5, 30, 200000)}."
+puts "Your monthly payment will be #{pmt(0.065, 30, 200000)}."
