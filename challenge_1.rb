@@ -23,11 +23,12 @@ def pmt(rate,nper,pv)
     pmt=((rate/100/12)*pv)/(1-((1+(rate/100/12))**(-nper*12)))
 
   return pmt
+
 end
 
 # Example usage of the method:
 
-pmt(0.065,360,200000)
+pmt(6.5,30,200000)
 
 # rate = 0.065
 # nper = 360
