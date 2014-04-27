@@ -17,8 +17,11 @@ loan_quotes = [
 
 # Given some parameters of the loan, perhaps entered by a user on a web form:
 
-number_of_payments = 180
+number_of_payments = 15
 principal_amount = 100000.0
+nper=number_of_payments.to_f
+pv=principal_amount.to_f
+
 
 # Now, loop through the array of loan quotes using .each:
 #   For each option, tell the user how much the monthly payment will be to that bank.
@@ -27,7 +30,10 @@ principal_amount = 100000.0
 # ====================
 # Your code goes here.
 # ====================
-pmt.each do |payment|
-  puts "Your monthly payment will be #{pmt["rate"]} #{pmt["number_of_payments"]} #{pmt["principal_amount"]}"
-  # "Howdy, #{person["first_name"]} #{person["last_name"]}!"
+loan_quotes.each do |loan|
+  puts "#{loan["bank"]} quotes you a monthly payment of $#{pmt(loan["rate"], number_of_payments, principal_amount).round(2)} at a monthly interest rate of #{(loan["rate",]*100).round(2)}%"
+  # (loan["rate"], number_of_payments, principal_amount)
+
+  # puts "Your monthly payment will be #{pmt["rate"]} #{pmt["number_of_payments"]} #{pmt["principal_amount"]}"
+
 end
