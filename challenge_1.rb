@@ -34,4 +34,4 @@ pmt(6.5,30,200000)
 # nper = 360
 # pv = 200000
 
-# puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
+puts "Your monthly payment will be #{pmt(6.5, 30, 200000)}."
